@@ -13,7 +13,7 @@ build-scores: _vals _hymne _starwars _seddel
 _book: 
 	cd Book; pdflatex main.tex; pdflatex main.tex
 
-book-all: build-scores book
+book-all: build-scores _book
 
 update-vals: _vals _book
 update-hymne: _hymne _book
